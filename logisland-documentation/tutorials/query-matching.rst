@@ -94,8 +94,8 @@ The result of the query will be pushed into to `logisland_aggregations` topic as
 2. Setup Query matching Stream on log Records
 ---------------------------------------------
 The second stream makes use of the `KafkaRecordStreamParallelProcessing <../plugins.html#kafkarecordstreamparallelprocessing>`_ Stream with a
-`MatchQuery <plugins.html#matchquery>`_ Processor. This processor provides user with dynamic query registration.
-This queries are expressed in the Lucene syntax.
+`MatchQuery <plugins.html#matchquery>`_ Processor. This processor provides the user with dynamic query registration.
+These queries are expressed in the Lucene syntax.
 
 .. note::
 
