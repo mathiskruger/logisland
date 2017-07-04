@@ -11,7 +11,7 @@ and generates high level events from them. It can for instance generate an event
 connection, a file transfer, a DNS query...anything that can be deduced from packet analysis.
 
 Through its out-of-the-box ParseBroEvent processor, Logisland integrates with Bro and is able to receive and handle Bro events and notices coming from Bro.
-By analyzing those events with Logisland, you may do some correlations and for instance generate some higher level alarms or do whatever
+By analyzing those events with Logisland, You could do correlations and for instance generate some higher level alarms or do whatever
 you want, in a scalable manner, like monitoring a huge infrastructure with hundreds of machines.
 
 Bro comes with a scripting language that allows to also generate some higher level events from other events correlations.
