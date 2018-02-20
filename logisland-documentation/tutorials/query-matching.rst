@@ -94,8 +94,8 @@ The result of the query will be pushed into to `logisland_aggregations` topic as
 2. Setup Query matching Stream on log Records
 ---------------------------------------------
 The second stream makes use of the `KafkaRecordStreamParallelProcessing <../plugins.html#kafkarecordstreamparallelprocessing>`_ Stream with a
-`MatchQuery <plugins.html#matchquery>`_ Processor. This processor provides user with dynamic query registration.
-This queries are expressed in the Lucene syntax.
+`MatchQuery <plugins.html#matchquery>`_ Processor. This processor provides the user with dynamic query registration.
+These queries are expressed in the Lucene syntax.
 
 .. note::
 
@@ -103,7 +103,7 @@ This queries are expressed in the Lucene syntax.
 
 We'll use 2 streams for query matching because we will handle 2 kind of Records.
 The first one will send an alert when a particular host (src_ip:199.0.2.27) will make a connection
-and anywhen someone from *.edu domain makes a connection (src_ip:*.edu).
+and when someone from *.edu domain makes a connection (src_ip:*.edu).
 
 
 .. code-block:: yaml

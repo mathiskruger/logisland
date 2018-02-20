@@ -4,7 +4,8 @@ Index Apache logs
 In the following getting started tutorial we'll drive you through the process of Apache log mining with LogIsland platform.
 
 We will start a Docker container hosting all the LogIsland services, launch two streaming processes and send some apache logs
-to the system in order to analyze them in a dashboard.
+to the system in order to analyze them in a dashboard. Thus make sure Docker is properly installed beforehand and that
+the docker daemon has started.
 
 
 .. note::
@@ -77,11 +78,12 @@ Connect a shell to your logisland container to launch the following streaming jo
     cd $LOGISLAND_HOME
     bin/logisland.sh --conf conf/index-apache-logs.yml
 
-
+You will see multiple errors and warnings. Due to the fact that the system is fresh from any of the data; Ignore them
+at this point.
 
 Setup Spark/Kafka streaming engine
 __________________________________
-An Engine is needed to handle the stream processing. This ``conf/index-apache-logs.yml`` configuration file defines a stream processing job setup.
+An Engine is needed to handle the stream processing. This ``conf/index-apache-logs.yml`` configuration file defines a stream processing job setup. You can browse the file, a typical example is shown on the second line below.
 The first section configures the Spark engine (we will use a `KafkaStreamProcessingEngine <../plugins.html#kafkastreamprocessingengine>`_) as well as an Elasticsearch service that will be used later in the BulkAddElasticsearch processor.
 
 .. code-block:: yaml
